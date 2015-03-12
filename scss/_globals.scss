@@ -12,7 +12,7 @@
     font-weight: 300;    
 }
 
-@mixin body-font-light-bold {
+@mixin body-font-bold {
     font-family: 'Open Sans', helvetica, verdana, sans-serif;
     font-style: normal;
     font-weight: 600;    
@@ -24,4 +24,11 @@
     font-weight: 700;    
 }
 
+$background-color: #fff;
 $color: #262626;
+$base-font-size: 22px;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size) { 
+    @return ($px / $base) * 1em; 
+}
